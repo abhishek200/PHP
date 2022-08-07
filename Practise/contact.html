@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback</title>
+</head>
+<body>
+    <h3>Feedback</h3>
+    <p>
+        Please enter the details below along with your comments
+    </p>
+    <!-- Form to take feedback from client and send it to the server using Post method-->
+    <form action="formHandle.php" method="post">
+        <!-- TO input Title using drop down-->
+        <p>
+            Title: <select name="Title" required>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Ms.">Ms.</option>
+            </select>
+        </p>
+        <!--To input name of the user-->
+        <p>
+            First Name: <input type="text" name="fName" id="fName" size="20" required>
+        </p>
+        <p>
+            Last Name: <input type="text" name="lName" id="lName" size="20" required>
+        </p>
+        <!--input email of the user-->
+        <p>
+            Email: <input type="email" name="eMail" id="eMail" size="30" required>
+        </p>
+        <!-- taking feedback using radio buttons -->
+        <p>
+            This Website is:
+            <input type="radio" name="feedback" value="Excellent">Excellent
+            <input type="radio" name="feedback" value="Good">Good
+            <input type="radio" name="feedback" value="Ok">Ok
+            <input type="radio" name="feedback" value="mediocre">Mediocre
+        </p>
+        <!--Use of textarea to get users comments-->
+        <p>
+            Comments: <textarea name="Comments" row="3" cols="30"></textarea>
+        </p>
+        <input type="submit" value="Submit Form" name="Submit">
+    </form>
+    
+</body>
+</html>
